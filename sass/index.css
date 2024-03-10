@@ -1,0 +1,68 @@
+.title {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px black;
+}
+
+.center {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex_main {
+  display: flex;
+  justify-content: center;
+}
+
+#login {
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+}
+
+#register {
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+}
+
+.fieldset_login input {
+  width: 100%;
+}
+
+.categories-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.button input[type=submit] {
+  margin-top: 10px;
+}
+
+.register_btn {
+  font-size: 1.15rem;
+  color: #1717a7;
+}
+.register_btn:hover {
+  color: blue;
+}
+
+.login_btn {
+  font-size: 1.15rem;
+  color: #1717a7;
+}
+.login_btn:hover {
+  color: blue;
+}/*# sourceMappingURL=index.css.map */

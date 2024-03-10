@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "password": "Password1!",
+      "email": "a@a.dk"
+    },
+    {
+      "id": 2,
+      "password": "ddPassword1!",
+      "email": "a@a.dk"
+    },
+    {
+      "email": "zzdd@dzzd.dk",
+      "password": "12345678dD!",
+      "id": 3
+    },
+    {
+      "email": "dd@ddxxxxxxx.dk",
+      "password": "12345678dD!",
+      "id": 4
+    },
+    {
+      "email": "dd@dd.dk",
+      "password": "ddPassword1!",
+      "id": 5
+    },
+    {
+      "email": "test@dd.dk",
+      "password": "1234567dD!",
+      "id": 6
+    },
+    {
+      "email": "test@dd.dl",
+      "password": "p%2V64Xe5tFS*@2",
+      "id": 7
+    },
+    {
+      "email": "test@dd.dl",
+      "password": "dddddddD1!",
+      "id": 8
+    }
+  ]
+}

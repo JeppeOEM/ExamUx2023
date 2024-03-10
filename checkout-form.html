@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single item</title>
+    <link rel="stylesheet" href="sass/base.css" />
+    <link rel="stylesheet" href="sass/header.css" />
+    <link rel="stylesheet" href="sass/footer.css" />
+    <link rel="stylesheet" href="sass/checkout.css" />
+    <link rel="stylesheet" href="sass/checkout-form.css" />
+    <script type="module" src="js/pages/checkout_form_page.js"></script>
+    <!-- <script type="module" src="js/functions/cart_and_header.js"></script> -->
+    <script type="module" src="js/functions/cart_and_header.js"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="nav_wrapper" aria-label="Main Navigation user enter to open link">
+      <nav class="navbar">
+        <div class="nav_style">
+          <a class="logo" href="shop.html"><h3>mini.shoppen</h3></a>
+
+          <ul class="hide_mobile">
+            <li class="hide_mobile" tabindex="0">
+              <button tabindex="-1" class="filter underline" data-filter="all">All Products</button>
+            </li>
+            <li class="hide_mobile relative close_here" tabindex="0">
+              <div class="dropdown_hover" tabindex="-1">
+                <button tabindex="0" class="dropdown_btn" aria-haspopup="true" aria-expanded="false">
+                  Clothing
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div tabindex="-1" class="dropdown-content">
+                  <p class="nonclick">Clothing</p>
+                  <button tabindex="0" class="filter underline" data-filter="clothing">All Clothing</button>
+                  <button tabindex="0" class="filter underline" data-filter="men's clothing">Men's Clothing</button>
+                  <button tabindex="0" class="filter close_dropdown underline" data-filter="women's clothing">
+                    Women's Clothing
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hide_mobile" tabindex="0">
+              <button tabindex="-1" class="filter underline" data-filter="electronics">Electronics</button>
+            </li>
+            <li class="hide_mobile" tabindex="0">
+              <button tabindex="-1" class="filter underline" data-filter="jewelery">Jewelry</button>
+            </li>
+          </ul>
+          <div tabindex="-1" class="cart-wrapper">
+            <span class="flex_horizontal">
+              <button class="dropdown_user">
+                <img class="user_icon" src="img/user.png" alt="User dropdown" aria-label="User" />
+              </button>
+              <div tabindex="0" class="dropdown_logout hide">
+                <img class="user_icon" src="img/user.png" alt="User dropdown" aria-label="User" />
+                <button class="log_out_btn close_dropdown" tabindex="0" tabindex="-1">Log out</button>
+              </div>
+              <button class="cart_btn">
+                <img
+                  id="cart_btn"
+                  class="cart_icon"
+                  src="img/basket.svg"
+                  alt="Go to checkout symbol"
+                  aria-label="Go to checkout" />
+              </button>
+            </span>
+
+            <button class="hamburger_btn" aria-label="Open menu">
+              <img tabindex="0" class="hamburger" src="img/bars-solid.png" alt="Dropdown menu" />
+            </button>
+            <div class="dropdown" tabindex="-1">
+              <div tabindex="-1" class="dropdown-content hamburger_content">
+                <button class="fixed_top" aria-label="Open menu">
+                  <img tabindex="0" class="hamburger" src="img/bars-solid.png" alt="Dropdown menu" />
+                </button>
+                <button tabindex="0" class="filter" data-filter="clothing">All Clothing</button>
+                <button tabindex="0" class="filter" data-filter="men's clothing">Men's Clothing</button>
+                <button tabindex="0" class="filter" data-filter="women's clothing">Women's Clothing</button>
+                <button tabindex="0" class="filter" data-filter="jewlery">Jewelry</button>
+                <button tabindex="0" class="filter" data-filter="electronics">Electronics</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="main_content">
+        <div class="checkout_steps">
+          <section class="step">
+            <h3 class="products">1) Address</h3>
+            <form id="address_form" method="post">
+              <fieldset class="fieldset">
+                <legend class="h4-font">Delivery address</legend>
+                <div class="input">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" required />
+                </div>
+                <div class="input">
+                  <label for="first_name">First name</label>
+                  <input id="first_name" name="first_name" class="first_name" type="text" required />
+                </div>
+                <div class="input">
+                  <label for="last_name">Last name</label>
+                  <input id="last_name" name="last_name" class="last_name" type="text" required />
+                </div>
+                <div class="input">
+                  <label for="address">Address</label>
+                  <input id="address" name="address" class="address" type="text" required />
+                </div>
+                <span class="flex_inline form_field">
+                  <div class="input">
+                    <label for="zip">Zip code</label>
+                    <input id="zip" class="zip" name="zip" class="zip" type="text" required />
+                  </div>
+                  <div class="input">
+                    <label for="city">City</label>
+                    <input id="city" class="city" name="city" class="city" type="text" required />
+                  </div>
+                </span>
+                <div class="input">
+                  <label for="mobile">Mobile</label>
+                  <input id="mobile" name="mobile" class="mobile" type="tel" required />
+                </div>
+                <div class="check_flex">
+                  <input tabindex="0" type="checkbox" class="billing_check" name="billing" checked />
+                  <label class="billing_check" for="billing">Use delivery address as billing address</label>
+                </div>
+
+                <div class="billing"></div>
+              </fieldset>
+            </form>
+            <aside id="saved" class="hide" aria-label="confirmed and saved address information">
+              <section class="flex_horizontal">
+                <article class="flex_columns delivery">
+                  <h5>Delivery Address</h5>
+                  <p class="first_name"></p>
+                  <p class="last_name"></p>
+                  <p class="email"></p>
+                  <p class="address"></p>
+                  <p class="zip"></p>
+                  <p class="city"></p>
+                  <p class="mobile"></p>
+                </article>
+                <article class="flex_columns billing_address">
+                  <h5>Billing Address</h5>
+                  <p class="first_name"></p>
+                  <p class="last_name"></p>
+                  <p class="email"></p>
+                  <p class="address"></p>
+                  <p class="zip"></p>
+                  <p class="city"></p>
+                  <p class="mobile"></p>
+                </article>
+              </section>
+              <span class="btn_border edit">
+                <button class="black" id="change_data">edit</button>
+                <img class="pen_icon" src="../img/pen.svg" alt="pen icon" />
+              </span>
+            </aside>
+          </section>
+          <section class="step">
+            <h3>2) Delivery</h3>
+            <div class="no_address">
+              <p>Fill out and submit your address to see delivery options.</p>
+            </div>
+            <div class="address_confirmed">
+              <form id="post" action="">
+                <fieldset class="postal flex_column radio_btns">
+                  <span class="radio_btn">
+                    <span>
+                      <input value="3" class="post_form" id="dhl" type="radio" />
+                      <label for="bring">DHL</label>
+                    </span>
+                    <p>5-7 days</p>
+                    <p class="cost">3$</p>
+                  </span>
+                  <span class="radio_btn">
+                    <span>
+                      <input tabindex="0" value="4" class="post_form" id="post_nord" type="radio" />
+                      <label for="bring">Post Nord</label>
+                    </span>
+
+                    <p>2-3 days</p>
+                    <p class="cost">4$</p>
+                  </span>
+                  <span class="radio_btn">
+                    <span>
+                      <input value="2" class="post_form" id="bring" type="radio" />
+                      <label for="bring">Bring</label>
+                    </span>
+                    <p>2-4 days</p>
+                    <p class="cost">2$</p>
+                  </span>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+          <section class="step payment">
+            <h3>3) Payment solution</h3>
+            <div class="no_address">
+              <p>Fill out and submit your address to see payment solutions.</p>
+            </div>
+            <div class="address_confirmed">
+              <form id="pay" class="payment_form" method="post">
+                <fieldset class="payment_solution flex_column radio_btns">
+                  <span class="radio_btn">
+                    <span class="flex_horizontal align_center">
+                      <input class="pay_form" name="credit" id="credit" type="radio" />
+                      <label for="credit">Credit card</label>
+                    </span>
+                  </span>
+                  <span class="radio_btn">
+                    <span class="flex_horizontal align_center">
+                      <input class="pay_form" name="mobile_pay" id="mobile_pay" type="radio" />
+                      <label for="mobile_pay">Mobile pay</label>
+                    </span>
+                  </span>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+        </div>
+
+        <section class="total_price">
+          <div class="flex_horizontal space_between">
+            <p class="h5-font">Delivery:&nbsp;</p>
+            <span class="flex_horizontal">
+              <p class="delivery_price h5-font">0</p>
+              <p class="h5-font">&nbsp;$</p>
+            </span>
+          </div>
+          <div class="flex_horizontal space_between">
+            <p class="h5-font">Items:&nbsp;</p>
+            <span class="flex_horizontal">
+              <p class="h5-font checkout_price"></p>
+              <p class="h5-font">&nbsp;$</p>
+            </span>
+          </div>
+          <hr />
+
+          <div class="flex_horizontal space_between">
+            <p class="h5-font bold">Total (incl. tax):&nbsp;</p>
+            <span class="flex_horizontal">
+              <p class=" h5-font sum_price"></p>
+              <p class="h5-font">&nbsp;$</p>
+            </span>
+          </div>
+          <div id="confirm_btn" class="button">
+            <button tabindex="0" type="submit" id="confirm" form="address_form">Confirm address</button>
+          </div>
+          <div id="payment_btn" class="button hide">
+            <button id="enter_payment_info" tabindex="0">Pay</button>
+          </div>
+        </section>
+      </div>
+
+      <p class="total"></p>
+      <!-- imported cart cart.html -->
+      <!-- <aside id="cart"></aside> -->
+    </main>
+    <!-- imported footer footer.html -->
+    <footer id="footer"></footer>
+
+    <!-- The Modal -->
+    <div class="overlay" id="modal_overlay">
+      <div class="modal"></div>
+    </div>
+  </body>
+  <aside id="cart"></aside>
+</html>

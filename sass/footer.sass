@@ -1,0 +1,49 @@
+footer
+    padding:20px
+    margin: 0
+
+    background: blue
+.social_icon
+    width: 30px
+    margin-right: 40px
+.footer_section
+    padding: 10px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: baseline
+    font-size: 1rem
+    & > * 
+        padding: 5px 0px
+    
+.left
+    & > *
+        padding: 10px
+footer 
+  background-color: #333333
+  color: #ffffff
+  padding: 20px
+  box-sizing: border-box
+  position: absolute
+  bottom: 0px
+
+  width: 100%
+footer a 
+    all: unset
+    cursor: pointer
+footer button
+    font-size: 1rem
+.fit_content
+@media only screen and (max-width: 668px) 
+    footer button
+        font-size: 0.8rem
+    footer p
+        font-size: 0.8rem
+    footer .flex_horizontal
+        flex-direction: column
+    .left
+        padding: 0px
+    footer .flex_horizontal.socials
+        flex-direction: row
+    main
+        padding-bottom: 500px

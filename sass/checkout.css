@@ -1,0 +1,139 @@
+.text_content {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.text_content > * {
+  padding: 5px 0px;
+}
+
+hr {
+  padding: 0px !important;
+}
+
+.item_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_image {
+  padding: 40px;
+  max-height: 500px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.product_image {
+  max-width: 120px;
+  max-height: 150px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.text_item {
+  max-width: 350px;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+.main_content section {
+  padding: 20px;
+}
+
+.article_content hr {
+  color: grey;
+  margin: 10px 0px;
+}
+
+figure {
+  text-align: center;
+}
+
+.cart_item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.total_price {
+  border: solid 2px #ccc;
+  margin-top: 68px;
+  margin-left: 10px;
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 350px;
+}
+.total_price div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.total_price p {
+  margin-bottom: 5px;
+}
+.total_price .button {
+  margin-top: 20px;
+}
+
+.item_section {
+  border: solid 2px #ccc;
+  margin-right: 10px;
+  background: white;
+}
+
+h1.products {
+  padding-bottom: 20px;
+}
+
+.flex_switch {
+  display: flex;
+  flex-direction: row;
+}
+
+.item_buttons {
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 910px) {
+  .item_section {
+    margin-right: 0px;
+  }
+  .main_content {
+    flex-direction: column;
+  }
+  .total_price {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .cart_item {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 555px) {
+  .flex_item1 {
+    order: 2;
+  }
+  .flex_switch {
+    flex-direction: column;
+  }
+  .push_down {
+    width: unset;
+  }
+}/*# sourceMappingURL=checkout.css.map */

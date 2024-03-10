@@ -1,0 +1,70 @@
+<div class="nav_wrapper" aria-label="Main Navigation user enter to open link">
+  <nav class="navbar">
+    <div class="nav_style">
+      <a class="logo" href="shop.html"><h3>mini.shoppen</h3></a>
+
+      <ul class="hide_mobile">
+        <li class="hide_mobile" tabindex="0">
+          <button tabindex="-1" class="filter underline" data-filter="all">All Products</button>
+        </li>
+        <li class="hide_mobile relative close_here" tabindex="0">
+          <div class="dropdown_hover" tabindex="-1">
+            <button tabindex="0" class="dropdown_btn" aria-haspopup="true" aria-expanded="false">
+              Clothing
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div tabindex="-1" class="dropdown-content">
+              <p class="nonclick">Clothing</p>
+              <button tabindex="0" class="filter underline" data-filter="clothing">All Clothing</button>
+              <button tabindex="0" class="filter underline" data-filter="men's clothing">Men's Clothing</button>
+              <button tabindex="0" class="filter close_dropdown underline" data-filter="women's clothing">
+                Women's Clothing
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="hide_mobile" tabindex="0">
+          <button tabindex="-1" class="filter underline" data-filter="electronics">Electronics</button>
+        </li>
+        <li class="hide_mobile" tabindex="0">
+          <button tabindex="-1" class="filter underline" data-filter="jewelery">Jewelry</button>
+        </li>
+      </ul>
+      <div tabindex="-1" class="cart-wrapper">
+        <span class="flex_horizontal">
+          <button class="dropdown_user">
+            <img class="user_icon" src="img/user.png" alt="User dropdown" aria-label="button to open logout option" />
+          </button>
+          <div tabindex="0" class="dropdown_logout hide">
+            <img
+              class="user_icon"
+              src="img/user.png"
+              alt="User dropdown"
+              aria-label="User icon for closing the logout dropdown" />
+            <button class="log_out_btn close_dropdown underline" tabindex="0" tabindex="-1">Log out</button>
+          </div>
+          <button aria-label="Go to checkout" class="cart_btn">
+            <img id="cart_btn" class="cart_icon" src="img/basket.svg" alt="Go to checkout symbol" />
+          </button>
+        </span>
+
+        <button class="hamburger_btn" aria-label="button to open navigation">
+          <img tabindex="0" class="hamburger" src="img/bars-solid.png" alt="Dropdown menu" />
+        </button>
+        <div class="dropdown" tabindex="-1">
+          <div tabindex="-1" class="dropdown-content hamburger_content">
+            <button class="fixed_top" aria-label="button to close navigation">
+              <img tabindex="0" class="hamburger" src="img/bars-solid.png" alt="Dropdown menu" />
+            </button>
+            <button tabindex="0" class="filter mobile_menu" data-filter="clothing">All Clothing</button>
+            <button tabindex="0" class="filter mobile_menu" data-filter="men's clothing">Men's Clothing</button>
+            <button tabindex="0" class="filter mobile_menu" data-filter="women's clothing">Women's Clothing</button>
+            <button tabindex="0" class="filter mobile_menu" data-filter="jewlery">Jewelry</button>
+            <button tabindex="0" class="filter mobile_menu" data-filter="electronics">Electronics</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

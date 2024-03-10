@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/base.css" />
+    <link rel="stylesheet" href="sass/cart.css" />
+    <link rel="stylesheet" href="sass/shop.css" />
+    <link rel="stylesheet" href="sass/header.css" />
+    <link rel="stylesheet" href="sass/footer.css" />
+    <!-- script type = module is automatically defered -->
+    <script type="module" src="js/pages/shop_page.js"></script>
+    <script type="module" src="js/functions/cart_and_header.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+    <main>
+      <p class="total"></p>
+      <h2 id="category"></h2>
+      <nav class="filters">
+        <span class="breadcrumb"></span>
+        <div class="sort">
+          <p>Sort by:</p>
+          <select id="alphabetic" name="alphabetic" class="select">
+            <option disabled selected>Alphabetic</option>
+            <option value="1">Alphabetic A-Z</option>
+            <option value="-1">Alphabetic Z-A</option>
+          </select>
+          <select id="price" name="price" class="select">
+            <option disabled selected>Price</option>
+            <option value="-1">Price High-Low</option>
+            <option value="1">Price Low-High</option>
+          </select>
+        </div>
+      </nav>
+      <section id="product_grid">
+        <template>
+          <article tabindex="0" id="" class="grid_item" data-category="">
+            <div class="push_away">
+              <img class="product_image" src="" alt="" />
+              <div class="push_down">
+                <div class="align_left">
+                  <div class="col-reverse">
+                    <p class="h5-font text_left">Price: <span class=" h5-font price"></span> $</p>
+                    <h5 class="name darkblue text_left bold "></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </section>
+
+      <!-- imported cart cart.html -->
+      <aside id="cart"></aside>
+    </main>
+
+    <!-- imported footer footer.html -->
+    <footer id="footer"></footer>
+  </body>
+</html>

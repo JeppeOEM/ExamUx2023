@@ -1,0 +1,142 @@
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  width: 500px;
+  flex-direction: column;
+  z-index: 3;
+  background-color: white;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  display: none;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+  border-left: solid 1px #ccc;
+}
+
+.push_down {
+  width: 350px;
+}
+
+.sticky {
+  background-color: #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+}
+.sticky .button {
+  padding-bottom: 10px;
+}
+
+.show {
+  right: 0;
+  display: flex;
+}
+
+.product_image {
+  max-width: 65px;
+}
+
+aside .cart_item {
+  padding: 20px;
+}
+
+.cart_item {
+  padding-bottom: 40px;
+}
+
+aside article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+aside figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.align_horizontal {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+.item_buttons {
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_buttons button {
+  font-size: 2rem;
+}
+
+.item_buttons .amount {
+  font-size: 1.15rem;
+  padding: 0px 10px;
+}
+
+.flex_horizontal .price {
+  margin-left: 10px;
+  font-size: 1.15rem;
+}
+
+.item_buttons .minus {
+  font-size: 2.5rem;
+}
+
+.cart_total {
+  position: absolute;
+  bottom: 0;
+}
+
+.border_top {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: solid 1px;
+}
+
+.body_overflow {
+  overflow-y: hidden;
+}
+
+.product_image {
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  aside {
+    width: 100%;
+  }
+  .mobile_flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  aside article {
+    justify-content: center;
+  }
+  aside .push_down {
+    width: unset;
+  }
+  .mobile_col {
+    flex-direction: column;
+  }
+  .delete_item {
+    text-align: right;
+  }
+  .item_buttons {
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=cart.css.map */

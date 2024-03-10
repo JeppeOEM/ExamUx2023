@@ -1,0 +1,220 @@
+@import 'variables'
+
+
+.step h3
+    color: $dark_blue2
+
+.input
+    display: flex
+    flex-direction: column
+    input
+        font-size: 1rem
+    label
+        padding-bottom: 5px
+
+.btn_border
+    cursor: pointer
+    margin-right: 20px
+    margin-top: 20px
+    padding: 10px
+    border: solid 2px 
+    top: 0
+    right: 0
+    position: absolute
+
+
+
+#change_data
+    color: $dark_blue2
+        &:hover
+            background-color: $blue
+            border: solid 2px $blue
+
+.pen_icon
+    width: 25px
+    padding-left: 10px
+
+.total_price
+    margin-top: 0px
+
+.step
+    border: solid 2px $grey
+    position: relative
+    margin-right: 10px
+    background: white
+    margin-bottom: 20px
+
+.flex_inline
+    display: flex
+    flex-direction: row
+.flex_inline .zip 
+        width: 150px
+        margin-right: 10px
+.flex_inline .city
+        width: 340px
+
+.checkout_steps
+    display: flex
+    flex-direction: column
+
+
+#saved
+
+    color: black
+
+.showdata
+    display: block 
+    all: unset
+
+.radio_btns
+    justify-content: flex-start
+    .radio_btn
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 20px 0px
+        border-bottom: solid 1px
+        span
+            width:100px
+
+
+.payment_form
+    display: flex
+    flex-direction: column
+
+
+// .mobilepay
+//     padding:30px
+
+.overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: $overlay-bg
+  justify-content: center
+  align-items: center
+
+.modal
+  position: relative
+  background: $modal-bg
+  padding: 40px
+  border-radius: 5px
+  box-shadow: $modal-box-shadow
+  margin: auto
+  label
+    margin-top: 10px
+    margin-bottom: 5px
+
+#close
+  position: absolute
+  cursor: pointer
+  padding:20px
+  top: 0px
+  right: 0px
+  font-weight: bold
+
+
+
+.payment_form
+  width: 100%
+
+  legend
+    margin-bottom: 10px
+
+  input
+    padding: 10px
+    font-size: 1.15rem
+
+
+.button
+    margin-top: 5px 
+#expiration
+        margin-right: 5px
+#cvv
+        margin-left: 5px 
+
+.delivery
+    margin-right: 20px
+    margin-bottom: 10px
+    h5
+        margin-bottom: 10px
+.billing
+    h5 
+        margin-bottom: 10px
+.billing_address
+    margin-left: 20px
+    h5
+        margin-bottom: 10px
+.step 
+    min-width:500px
+    legend
+        margin-top: 20px
+        margin-bottom: 10px
+.address_form
+    min-width: none
+
+input[type="checkbox"] 
+  min-width: 25px
+  min-height: 25px
+input[type="radio"] 
+  min-width: 15px
+  min-height: 15px
+.check_flex
+    padding-top: 10px
+    display: flex
+    align-items: center
+    label
+        padding-left: 10px
+
+.align_center
+    label
+        margin-left: 10px
+        white-space: nowrap
+@media only screen and (max-width: 591px) 
+    .step 
+        min-width:0px
+
+    .flex_inline.form_field
+        flex-direction: column
+    .step
+        margin-right: 0px
+    .flex_inline .zip
+        width: 100%
+    .flex_inline .city
+        width:  100%
+    // h3
+    //     margin-bottom: 40px
+
+@media only screen and (max-width: 417px) 
+    .input input
+        width: 300px
+    .flex_inline .input input
+        width: 300px
+
+@media only screen and (max-width: 390px) 
+    .input input
+        width: 280px
+    .flex_inline .input input
+        width: 280px
+    
+@media only screen and (max-width: 370px) 
+    .input input
+        width: 260px
+    .flex_inline .input input
+        width: 260px
+    
+@media only screen and (max-width: 350px) 
+    .input input
+        width: 240px
+    .flex_inline .input input
+        width: 240px
+
+@media only screen and (max-width: 330px) 
+    .input input
+        width: 220px
+    .flex_inline .input input
+        width: 220px
+    

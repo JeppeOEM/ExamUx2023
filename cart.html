@@ -1,0 +1,39 @@
+<section>
+  <template class="cart_template">
+    <article class="cart_item" data-category="">
+      <div class="flex_horizontal mobile_flex">
+        <figure>
+          <img tabindex="-1" class="product_image" src="" alt="" />
+        </figure>
+        <div tabindex="-1" class="push_down">
+          <!-- name of item insertered -->
+          <h5 class="darkblue name"></h5>
+
+          <div class="flex_horizontal border_top space_between mobile_col">
+            <span class="flex_horizontal">
+              <p class="h5-font">Total Price:</p>
+              <p class="price h5-font"></p>
+            </span>
+            <p>&nbsp;$</p>
+            <span class="item_buttons">
+              <button tabindex="0" class="minus" aria-label="decrease item amount">-</button>
+              <span tabindex="-1" aria-atomic="true" aria-label="item amount" class="amount"></span>
+              <button tabindex="0" class="plus" aria-label="decrease item amount">+</button>
+            </span>
+            <button tabindex="0" class="delete_item" aria-label="decrease item amount">🗑️</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex_horizontal border_top"></div>
+    </article>
+  </template>
+</section>
+<div class="sticky">
+  <div class="button">
+    <a tabindex="0" href="/checkout.html">Go to checkout</a>
+  </div>
+  <div tabindex="-1" class="button">
+    <button tabindex="0" class="continue button2">Continue shopping</button>
+  </div>
+  <div></div>
+</div>

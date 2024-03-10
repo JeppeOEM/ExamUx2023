@@ -1,0 +1,150 @@
+@import 'variables'
+.wrapper
+    padding: 0px 40px
+    margin-bottom: 40px
+.wrapper .fit_content
+    border: solid 2px $grey
+    background-color: $white
+    min-width:500px
+    min-height:630px
+    margin-right: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+
+// .wrapper
+//     background-color: $white
+
+.full_hw
+    display: flex
+    min-height:630px
+
+.text_content
+    border: solid 2px $grey
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    padding: 10px 0px
+    background-color: $white
+    padding: 30px
+    margin-left: 10px
+
+.text_content > *
+    padding: 5px 0px
+
+hr  
+    margin-top: 5px
+    margin-bottom: 10px
+
+    padding: 0px !important
+
+.item_section
+    display: flex
+    flex-direction: column
+
+    // justify-content: center
+    // align-items: center
+
+.wrapper
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+.item_image
+    padding:20px
+    max-height: 500px
+    max-width: 500px
+
+// .button
+
+//     width: 100%
+
+// .button a
+//     background-color: $dark_blue
+//     width: 100%
+//     padding: 15px 0px
+//     text-align: center
+//     border-radius: 5px
+//     color: white
+//     transition: 0.3s
+//     display: block
+//     padding: 15px 0px
+//     width: 100%
+//     &:hover
+
+//           background-color: $blue
+//           cursor: pointer
+
+// .button button
+//     background-color: $dark_blue
+//     width: 100%
+//     padding: 15px 0px
+//     text-align: center
+//     border-radius: 5px
+//     color: white
+//     transition: 0.3s
+//     &:hover
+
+//           background-color: $blue
+//           cursor: pointer
+
+// .item_buttons button
+//     width: fit-content
+//     font-size: 1.44rem
+
+
+.breadcrumb
+  padding-bottom: 20px
+  padding-left: 20px
+
+
+.item_title
+    padding-bottom: 15px
+
+
+
+
+@media only screen and (max-width: 1020px) 
+    .wrapper
+        flex-direction: column
+    .wrapper .fit_content
+        background-color: $white
+        min-width: unset
+        min-height: unset
+        margin-right: 0px
+        width: 100%
+        margin-bottom: 20px
+
+    .full_hw
+        min-height: unset
+    .text_content
+            margin-left: 0px
+
+
+
+
+@media only screen and (max-width: 550px) 
+    .item_image
+        padding:40px
+        max-height: 400px
+        max-width: 300px
+
+    .wrapper
+        padding: 0px 30px
+    .breadcrumb
+        padding-left: 10px
+
+
+@media only screen and (max-width: 400px) 
+    .item_image
+        padding:40px
+        max-height: 300px
+        max-width: 250px
+
+
+
+
+
+
+// @media only screen and (max-width: 571px) 
+

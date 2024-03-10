@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single item</title>
+    <link rel="stylesheet" href="sass/base.css" />
+    <link rel="stylesheet" href="sass/item.css" />
+    <link rel="stylesheet" href="sass/cart.css" />
+    <link rel="stylesheet" href="sass/header.css" />
+    <link rel="stylesheet" href="sass/footer.css" />
+    <script type="module" src="js/html_components.js"></script>
+    <script type="module" src="js/pages/item_page.js"></script>
+    <script type="module" src="js/functions/cart_and_header.js"></script>
+  </head>
+  <body>
+    <!-- imported header header.html -->
+    <header id="header"></header>
+    <main>
+      <section class="item_section">
+        <span class="breadcrumb"></span>
+        <div class="wrapper">
+          <div class="fit_content">
+            <figure>
+              <img class="item_image" src="" alt="" />
+            </figure>
+          </div>
+          <div class="full_hw">
+            <section class="text_content">
+              <h4 class="darkblue item_title"></h4>
+              <hr />
+              <h5>Price: <span class="h5-font item_price"></span> $</h5>
+              <h5>
+                Rating: <span class=" h5-font item_rate"></span><span class="h5-font"> out of 5</span> (<span
+                  class="h5-font item_count"></span
+                >)
+              </h5>
+              <hr />
+
+              <h5 class="darkblue">Description</h5>
+              <p class="item_description"></p>
+              <div class="flex_grow">
+                <div class="button">
+                  <button tabindex="0" class="add_cart button2">Add to cart</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <p class="total"></p>
+      <!-- imported cart cart.html -->
+      <aside id="cart"></aside>
+    </main>
+    <!-- imported footer footer.html -->
+    <footer id="footer"></footer>
+  </body>
+</html>
